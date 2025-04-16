@@ -2647,27 +2647,29 @@ body, html {
 }
 
 
-
-
-
-
+/******** DISEÑO FOOTER ********/
 
 .bg-footer {
     background-color: #0e1618;
     color: #fff;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 40px 20px;
-  }
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100%; 
+}
+
   .text-primary-pl {
     color: #00FF00 !important;
   }
   .texto-footer {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     margin: 0;
   }
   .titulo-footer {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -2686,13 +2688,13 @@ body, html {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .footer-links a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 16px;
+    font-size: 14px;
   }
   .footer-links a:hover {
     color: #00FF00;
@@ -2744,7 +2746,10 @@ body, html {
     margin-bottom: 10px; 
   }
   .contact-item svg {
-    margin-right: 8px; 
+    margin-right: 9px; 
   }
+
+  
+  
 
   
