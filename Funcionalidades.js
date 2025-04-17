@@ -1,8 +1,11 @@
 // Funcion de Barra de menu de opciones en Moviles
-function toggleMenu() {
-    const options = document.querySelector('.navbar-options');
-    options.classList.toggle('active');
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const ham = document.querySelector('.hamburger');
+  const nav = document.querySelector('.navbar-options');
+  ham.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
 
 // Hacer visible el modal de Productores
 document.addEventListener("DOMContentLoaded", function() {
