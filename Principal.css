@@ -333,7 +333,7 @@ h1, p {
       width: 100%;
       padding: 8px 10px;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       border-radius: 5px;
       transition: background-color 0.3s;
     }
@@ -547,6 +547,7 @@ h1, p {
 .green-box-content p {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  text-align: center !important;
 }
 
 .green-box-content p:first-child {
@@ -565,35 +566,18 @@ h1, p {
   object-fit: cover;
 }
 
-/* Media Queries para mejorar la responsividad */
-@media (max-width: 768px) {
-  .promolider-content {
-    flex-direction: column;
-    padding: 1cm;
+.green-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  .green-box-container {
-    flex-wrap: wrap;
-  }
-
-  .green-box {
-    height: auto;
-    flex: 1 1 100%;
-  }
-
-  .green-box-content p:first-child {
-    font-size: 1.1em;
-  }
-
-  .green-box-content p:last-child {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .promolider-content h1 {
-    font-size: 2.5em;
-  }
+  
+.green-box-content {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Efecto hover en palabras clave */
@@ -625,10 +609,159 @@ h1, p {
     transform: scaleX(1); 
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 600px) {
-    .hover-effect::after {
-        bottom: 0; /* Ajusta la posición de la línea */
+/* Responsive ≤ 768px */
+@media (max-width: 768px) {
+    .promolider-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        justify-content: center;   
+        gap: 0.5cm;
+        text-align: center;   
+    }      
+    
+    .promolider-content h1 {
+      font-size: 2.5em;
+      text-align: center !important;
+      margin-bottom: 0.5cm;
+    }
+    
+    .promolider-content h1 br {
+      display: none !important;
+    }
+    
+    .promolider-section {
+      padding: 0.5cm 0.5cm 0 0.5cm;
+    }
+    
+    .green-box-section {
+      padding: 0 0.5cm 0.5cm 0.5cm;
+    }
+    
+    .green-box-container {
+      flex-direction: column;
+      gap: 0.5cm;
+    }
+    
+    .green-box {
+      min-width: auto;
+      height: auto;
+      min-height: 2.5cm;
+      padding: 0.5cm;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    
+    .green-box-content {
+      width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    
+    .promolider-description p {
+      font-size: 1em;
+      text-align: center !important;
+      margin: 0 auto !important;
+      width: 100%;
+    }
+    
+    .green-box-content p:first-child {
+      font-size: 1.1em;
+      margin-bottom: 0.2cm;
+    }
+    
+    .green-box-content p:last-child {
+      font-size: 1em;
+    }
+  }
+  
+  /* Tablets landscape & small laptops (769px–1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .promolider-content {
+      gap: 1cm;
+    }
+    
+    .promolider-content h1 {
+      font-size: 3em;
+    }
+    
+    .promolider-section {
+      padding: 0.8cm 0.8cm 0 0.8cm;
+    }
+    
+    .green-box-section {
+      padding: 0 0.8cm 0.8cm 0.8cm;
+    }
+    
+    .green-box-container {
+      gap: 0.8cm;
+      flex-wrap: wrap;
+    }
+    
+    .green-box {
+      min-width: 200px;
+      height: auto;
+      min-height: 2.8cm;
+      padding: 0.4cm;
+      flex: 1 1 45%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    
+    .green-box-content {
+      width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    
+    .promolider-description p {
+      font-size: 1.05em;
+      margin: 0 auto !important;
+    }
+    
+    .green-box-content p:first-child {
+      font-size: 1.15em;
+      margin-bottom: 0.25cm;
+    }
+    
+    .green-box-content p:last-child {
+      font-size: 1.05em;
+    }
+  }
+  
+  /* Desktops & larger (≥1025px) */
+  @media (min-width: 1025px) {
+    .promolider-content h1 {
+      font-size: 3.8em;
+    }
+    
+    .promolider-description p {
+      font-size: 1.2em;
+    }
+    
+    .green-box {
+      height: auto;
+      min-height: 3.2cm;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    
+    .green-box-content {
+      width: 100%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    
+    .green-box-content p:first-child {
+      font-size: 1.3em;
+    }
+    
+    .green-box-content p:last-child {
+      font-size: 1.15em;
     }
 }
 
