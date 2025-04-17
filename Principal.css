@@ -51,7 +51,7 @@ body {
     text-decoration: none;
     position: relative;
     padding: 5px 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
@@ -2928,6 +2928,237 @@ body, html {
       transform: none !important;
     }
   }
+
+/******** DISEÑO ÚNETE A PROMOLIDER ********/
+
+.seccion-unete-promolider {
+    height: 20cm;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+
+.contenedor-base {
+    height: 5.5cm;
+    width: 100%;
+    background-color: #24292e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.panel-contenido-principal {
+    width: 29cm;
+    height: 14cm;
+    position: absolute;
+    top: 0.5cm; 
+    right: 0.5cm; 
+    background-color: white;
+    text-align: right; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo-verde {
+    color: #00FF00;
+    font-size: 52px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: bold;
+    text-align: right !important;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.titulo-verde:hover {
+    color: #00FF00;
+    transform: scale(1.03);  
+}
+
+.subtitulo-principal {
+    font-size: 19px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    text-align: right !important; 
+}
+
+.descripcion-oportunidad, .descripcion-pionero {
+    font-size: 17px;
+    margin-bottom: 5px;
+    text-align: right !important; 
+}
+
+.contenedor-flexibilidad {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+
+.contenedor-cta-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+.cta-verde {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px 50px;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    text-align: center !important;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.cta-verde:hover {
+    animation: pulsar 3s infinite; /* Animación de 3 segundos en bucle */
+}
+
+@keyframes pulsar {
+    0% {
+        background-color: #00FF00; /* Verde original */
+        transform: scale(1); /* Tamaño normal */
+    }
+    25% {
+        background-color: #33FF33; /* Verde claro */
+        transform: scale(1.02); /* Pequeño agrandamiento */
+    }
+    50% {
+        background-color: #00CC00; /* Verde oscuro */
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+    75% {
+        background-color: #33FF33; /* Verde claro */
+        transform: scale(1.02); /* Pequeño agrandamiento */
+    }
+    100% {
+        background-color: #00FF00; /* Vuelve al verde original */
+        transform: scale(1); /* Tamaño normal */
+    }
+}
+
+.mensaje-final {
+    font-size: 19px;
+    text-align: right !important; 
+    color: black;
+}
+
+.foto-super {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 950px; 
+    height: auto;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .seccion-unete-promolider {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .foto-super,
+    .panel-contenido-principal,
+    .contenedor-base {
+      position: relative !important;
+      left: auto !important;
+      right: auto !important;
+      top: auto !important;
+      bottom: auto !important;
+      z-index: auto !important;
+      margin: 0.5rem 0 !important;
+      width: 100% !important;
+    }
+  
+    .foto-super {
+      order: 1;
+      display: none !important;
+    }
+  
+    .panel-contenido-principal {
+      order: 2;
+      background-color: white;
+      padding: 1rem;
+      box-sizing: border-box;
+      text-align: center !important;
+      margin-bottom: 1rem;
+      height: auto !important;
+      z-index: 2 !important;
+    }
+  
+    .panel-contenido-principal .mensaje-final {
+      display: block;
+      margin-top: 1rem;
+    }
+  
+    .contenedor-base {
+        order: 3;
+        background-color: #24292e;
+        background-image: url('img/foto-unete.webp');
+        background-repeat: no-repeat;
+        background-position: calc(50% - 0.8cm) calc(100% + 0.3cm) !important;
+        background-size: contain;
+        padding-top: 1rem;
+        padding-bottom: 250px;
+        width: calc(100% + 2rem) !important;
+        margin: 0.5rem -1rem !important;
+    }
+  
+    .titulo-verde {
+      font-size: 2rem;
+      text-align: center !important;
+    }
+  
+    .subtitulo-principal,
+    .descripcion-oportunidad,
+    .descripcion-pionero,
+    .mensaje-final {
+      font-size: 1rem;
+      text-align: center !important;
+    }
+
+    .mensaje-final {
+        text-align: center !important;
+    }
+  
+    .cta-verde {
+      align-self: center;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+    }
+
+    .contenedor-cta-derecha {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+      }
+  
+      .contenedor-cta-derecha * {
+        text-align: center !important;
+      }
+
+      .contenedor-cta-derecha > * {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+  }
+  
 
 /******** DISEÑO FOOTER ********/
 
