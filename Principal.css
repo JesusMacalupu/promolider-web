@@ -1684,14 +1684,14 @@ ul + .solucion-promolider {
     
     .imagen-flotante {
         position: relative;
-        bottom: 0; /* Aseguramos que esté pegada abajo */
-        left: auto;
-        transform: none;
+        bottom: 0;
+        left: 50%; /* Centrado horizontal */
+        transform: translateX(-50%); /* Ajuste fino para centrado perfecto */
         width: 100%;
         max-width: 600px;
-        margin: 2rem auto 0; /* Eliminamos margen inferior */
+        margin: 2rem 0 0; /* Eliminamos margen automático lateral */
         order: 2;
-        align-self: center;
+        display: block; /* Aseguramos que ocupe su propio espacio */
     }
     
     @media (max-width: 480px) {
@@ -1725,7 +1725,9 @@ ul + .solucion-promolider {
         }
         
         .imagen-flotante {
-            margin: 1.5rem auto 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            margin: 1.5rem 0 0; 
         }
     }
 }
@@ -2183,9 +2185,9 @@ body, html {
     width: auto;
     max-width: 70%;
     height: auto;
-    max-height: 100%;
+    max-height: 90%;
     object-fit: contain;
-    margin-left: 19%;
+    margin-left: 22%;
     align-self: center;
     position: relative;
     top: -19px;
@@ -2644,7 +2646,155 @@ body, html {
         width: 90% !important;
         margin: 1rem auto !important;
     }
-} 
+}
+
+/* ===== RESPONSIVE: 1025px - 1450px ===== */
+@media (min-width: 950px) and (max-width: 1450px) {
+    .app-leadboost {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo-leadboost {
+        position: relative;
+        order: 1;
+        top: auto;
+        left: auto;
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto 2rem !important;
+        padding: 0;
+        text-align: center !important;
+    }
+    
+    .cabecera-leadboost {
+        font-size: 1.8rem;
+        text-align: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .principal-leadboost {
+        font-size: 2.2rem;
+        text-align: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .agrandar-leadboost {
+        font-size: 3rem;
+        display: block !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    .custom-hr-leadboost {
+        margin: 1rem auto !important;
+        width: 80% !important;
+        border: none;
+        height: 3px;
+        background-color: white;
+    }
+    
+    .descripcion-leadboost-abajo {
+        font-size: 1.2rem;
+        text-align: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+    
+    .leadboost-container {
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    
+    .app-leadboost img {
+        order: 1;
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto 2rem;
+        top: 0;
+    }
+    
+    .leadboost-content {
+        order: 3;
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto 2rem;
+        top: auto;
+        right: auto;
+        left: auto;
+    }
+    
+    .leadboost-content2 {
+        order: 4;
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto 2rem;
+        top: auto;
+        right: auto;
+        left: auto;
+    }
+
+    .contenedor-flex {
+        display: flex;
+        justify-content: center; 
+        gap: 2rem; 
+        flex-wrap: wrap; 
+    }
+    
+    .leadboost-app {
+        order: 5;
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        top: auto;
+        right: auto;
+        left: auto;
+    }
+    
+    .leadboost-content,
+    .leadboost-content2 {
+        font-size: 0.9rem;
+    }
+    
+    .leadboost-content h3,
+    .leadboost-content2 h3 {
+        font-size: 1.1rem;
+    }
+    
+    .leadboost-content ul,
+    .leadboost-content2 ul {
+        font-size: 0.95rem;
+    }
+    
+    .leadboost-app {
+        margin-bottom: 3rem;
+    }
+
+    .principal-leadboost br {
+        display: none !important; 
+    }
+
+    .descripcion-leadboost-abajo br {
+        display: none !important; 
+    }
+}
 
 /***** SECCION PLATAFORMAS DIFERENCIAS *****/
 .plataforma-container {
@@ -2847,6 +2997,31 @@ body, html {
         background-repeat: no-repeat !important;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .rectangulo-fila1,
+    .rectangulo-filasSeccion {
+        flex: 1 1 45%;
+        height: auto;
+        min-height: 70px;
+    }
+
+    .rectangulo-fila1 p,
+    .rectangulo-filasSeccion p {
+        font-size: clamp(0.8rem, 2vw, 1.1rem);
+    }
+
+    #logoDePromolider, 
+    #logoDeHotmart {
+        background-size: 80% auto;
+    }
+
+    .plataformas-versus {
+        box-sizing: border-box;
+        padding-block: clamp(0.8rem, 2vw, 1.5rem);
+    }
+}
+
 
 .rectangulos-seccion .rectangulo-filasSeccion:nth-child(1),
 .rectangulos-seccion .rectangulo-filasSeccion:nth-child(2) {
@@ -3138,7 +3313,68 @@ body, html {
       margin: 0.5rem 0 !important;
       transform: none !important;
     }
-  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1450px) {
+    /* Contenedor en columna, alineado a la izquierda */
+    .testimonios-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .titulo-industria br {
+        display: none;
+    }
+
+    .contenido-izquierdo p {
+        font-size: 0.3em !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .testimonio-texto p {
+        font-size: 0.35em !important;
+      }
+    
+    .cita-testimonio br {
+        display: none;
+    }
+  
+    /* Bloque izquierdo: ancho completo, sin margen lateral, con separación abajo */
+    .contenido-izquierdo {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1cm;
+      align-items: center !important;
+      text-align: center !important;
+    }
+  
+    /* Bloque derecho: ancho completo, sin margen lateral */
+    .testimonios-contenedor-derecho {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    /* Preparar el destacado verde para posicionamiento absoluto */
+    .testimonios-destacado-verde {
+      position: relative;
+    }
+  
+    .imagen-sobrepuesta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        transform: none;
+        width: 470px !important;
+        height: auto;
+        max-width: none;
+    }
+}
+  
 
 /******** DISEÑO ÚNETE A PROMOLIDER ********/
 
@@ -3272,7 +3508,7 @@ body, html {
     z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
     .seccion-unete-promolider {
       display: flex;
       flex-direction: column;
@@ -3369,6 +3605,12 @@ body, html {
         align-items: center !important;
       }
   }
+
+@media screen and (min-width: 769px) and (max-width: 1450px) {
+    .foto-super {
+        width: 750px !important;
+    }
+}
   
 
 /******** DISEÑO FOOTER ********/
