@@ -51,7 +51,7 @@ body {
     text-decoration: none;
     position: relative;
     padding: 5px 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
@@ -113,7 +113,7 @@ body {
 
 .hero-text h1 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem !important;
     line-height: 1.2;
     margin-bottom: 20px;
     color: white;
@@ -136,7 +136,17 @@ body {
 .text-3d {
     display: inline-block;
     position: relative;
+    visibility: visible !important; 
+    opacity: 1 !important; 
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.text-3d:hover,
+.text-3d:focus,
+.text-3d:active {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .highlight-green:hover .text-3d {
@@ -159,7 +169,7 @@ body {
 .hero-text p {
     color: #7ff57f;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.1rem !important;
     margin-bottom: 30px;
 }
 
@@ -179,7 +189,7 @@ body {
     text-decoration: none !important;
     font-weight: 600;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1.1rem !important;
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -333,7 +343,7 @@ h1, p {
       width: 100%;
       padding: 8px 10px;
       color: white;
-      font-size: 1.1rem;
+      font-size: 1rem !important;
       border-radius: 5px;
       transition: background-color 0.3s;
     }
@@ -360,12 +370,12 @@ h1, p {
     }
   
     .hero-text h1 {
-      font-size: 2.4rem;
+      font-size: 2rem !important;
       line-height: 1.2;
     }
   
     .hero-text p {
-      font-size: 1.1rem;
+      font-size: 1rem !important;
       margin-bottom: 30px;
     }
   
@@ -415,14 +425,14 @@ h1, p {
       margin: 0;
     }
     .hero-text h1 {
-      font-size: 2.8rem;
+      font-size: 2.4rem !important;
     }
     .hero-text p {
-      font-size: 1.2rem;
+      font-size: 1rem !important;
     }
     .btn-green {
       padding: 16px 32px;
-      font-size: 1.15rem;
+      font-size: 1rem !important;
       min-width: 210px;
     }
   }
@@ -451,14 +461,14 @@ h1, p {
       margin: 0;
     }
     .hero-text h1 {
-      font-size: 3rem;
+      font-size: 2.3rem !important;
     }
     .hero-text p {
-      font-size: 1.3rem;
+      font-size: 1.1rem !important;
     }
     .btn-green {
       padding: 16px 32px;
-      font-size: 1.2rem;
+      font-size: 1rem !important;
       min-width: 220px;
     }
   }  
@@ -481,7 +491,7 @@ h1, p {
 .promolider-content h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 3em !important;
   line-height: 1;
   margin: 0;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -498,7 +508,7 @@ h1, p {
 
 .promolider-description p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em !important;
   line-height: 1.5;
   margin: 0;
 }
@@ -551,13 +561,13 @@ h1, p {
 }
 
 .green-box-content p:first-child {
-  font-size: 1.2em;
+  font-size: 1.1em !important;
   font-weight: bold;
   margin-bottom: 0.3cm;
 }
 
 .green-box-content p:last-child {
-  font-size: 1.1em;
+  font-size: 1em !important;
 }
 
 .bottom-image {
@@ -621,7 +631,7 @@ h1, p {
     }      
     
     .promolider-content h1 {
-      font-size: 2.5em;
+      font-size: 2em !important;
       text-align: center !important;
       margin-bottom: 0.5cm;
     }
@@ -661,19 +671,19 @@ h1, p {
     }
     
     .promolider-description p {
-      font-size: 1em;
+      font-size: 0.9em !important;
       text-align: center !important;
       margin: 0 auto !important;
       width: 100%;
     }
     
     .green-box-content p:first-child {
-      font-size: 1.1em;
+      font-size: 1em !important;
       margin-bottom: 0.2cm;
     }
     
     .green-box-content p:last-child {
-      font-size: 1em;
+      font-size: 0.9em !important;
     }
   }
   
@@ -684,7 +694,7 @@ h1, p {
     }
     
     .promolider-content h1 {
-      font-size: 3em;
+      font-size: 2em !important;
     }
     
     .promolider-section {
@@ -718,17 +728,17 @@ h1, p {
     }
     
     .promolider-description p {
-      font-size: 1.05em;
+      font-size: 1em !important;
       margin: 0 auto !important;
     }
     
     .green-box-content p:first-child {
-      font-size: 1.15em;
+      font-size: 1em !important;
       margin-bottom: 0.25cm;
     }
     
     .green-box-content p:last-child {
-      font-size: 1.05em;
+      font-size: 1em !important;
     }
   }
   
@@ -833,7 +843,7 @@ h1, p {
 .tituloProductores {
     color: #00FF00;
     text-align: center;
-    font-size: clamp(18px, 4vw, 24px);
+    font-size: clamp(15px, 3vw, 20px);
     margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -883,7 +893,7 @@ label {
     margin-bottom: 8px;
     color: #00FF00;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -913,7 +923,7 @@ input {
     background-color: #3A3A3A;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(12px, 2vw, 13px);
     transition: all 0.3s ease;
 }
 
@@ -936,7 +946,7 @@ input::placeholder {
     text-decoration: none !important;
     font-weight: 600;
     border-radius: 6px;
-    font-size: clamp(16px, 3vw, 1.2rem);
+    font-size: clamp(13px, 2vw, 1rem);
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1033,7 +1043,7 @@ input::placeholder {
     
     .tituloProductores {
         padding: 8px 12px;
-        font-size: 18px;
+        font-size: 14px;
     }
     
     input {
@@ -1125,7 +1135,7 @@ input::placeholder {
 .tituloDistribuidores {
     color: #00FF00;
     text-align: center;
-    font-size: clamp(18px, 4vw, 24px);
+    font-size: clamp(15px, 3vw, 20px);
     margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
@@ -1175,7 +1185,7 @@ input::placeholder {
     margin-bottom: 8px;
     color: #00FF00;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(15px, 3vw, 16px);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1205,7 +1215,7 @@ input::placeholder {
     background-color: #3A3A3A;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 3vw, 16px);
+    font-size: clamp(12px, 2vw, 13px);
     transition: all 0.3s ease;
 }
 
@@ -1228,7 +1238,7 @@ input::placeholder {
     text-decoration: none !important;
     font-weight: 600;
     border-radius: 6px;
-    font-size: clamp(16px, 3vw, 1.2rem);
+    font-size: clamp(13px, 2vw, 1rem);
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1325,8 +1335,7 @@ input::placeholder {
     
     .tituloDistribuidores {
         padding: 8px 12px;
-        font-size: 18px;
-        white-space: normal;
+        font-size: 14px;
     }
     
     .formulario-distribuidor input {
@@ -1387,7 +1396,7 @@ input::placeholder {
     transform: translateX(-50%);
     width: 105%;
     height: auto;
-    max-height: 21cm;
+    max-height: 20cm;
     z-index: 3;
     object-fit: contain;
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.7));
@@ -1395,7 +1404,7 @@ input::placeholder {
 
 .texto-destacado {
     font-family: 'Poppins', sans-serif; /* Fuente Poppins */
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold; 
     display: inline-block;
     margin: 0;
@@ -1410,7 +1419,7 @@ input::placeholder {
     left: 1cm; /* Margen izquierdo de 0.5cm */
     color: #00FF00;
     font-family: 'Poppins', sans-serif;
-    font-size: 3.3em; /* Tamaño aumentado (antes 2.5em) */
+    font-size: 2.8em; /* Tamaño aumentado (antes 2.5em) */
     font-weight: bold;
     z-index: 4;
     width: 80%; 
@@ -1436,7 +1445,7 @@ input::placeholder {
 .texto-secundario p {
     margin: 0.3em 0;
     font-weight: normal; /* Mantenemos el peso normal */
-    font-size: 1.5em; /* Tamaño original */
+    font-size: 1.2em; /* Tamaño original */
     font-weight: bold;
 }
 
@@ -1444,7 +1453,7 @@ input::placeholder {
 .texto-secundario ul {
     margin: 0.5em 0;
     padding-left: 1em;
-    font-size: 1em; 
+    font-size: 0.8em; 
 }
 
 ul + .solucion-promolider {
@@ -1482,7 +1491,7 @@ ul + .solucion-promolider {
 .solucion-promolider h2 {
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin: 0 0 0.4cm 0; /* Aumenté el margen inferior */
     padding: 0;
@@ -1502,7 +1511,7 @@ ul + .solucion-promolider {
 
 .beneficios-info {
     position: absolute;
-    width: 11cm;
+    width: 9cm;
     height: 13cm;
     background-color: #4B4B4B;
     z-index: 4;
@@ -1527,7 +1536,7 @@ ul + .solucion-promolider {
 }
 
 .contenido-beneficios p {
-    font-size: 1.6em; /* Reducido para mejor ajuste */
+    font-size: 1em; /* Reducido para mejor ajuste */
     font-weight: bold;
     margin: 0 0 0.6cm 0; /* Margen inferior reducido */
     line-height: 1.2;
@@ -1539,7 +1548,7 @@ ul + .solucion-promolider {
 .contenido-beneficios ul {
     margin: 0;
     padding-left: 1em;
-    font-size: 1.1em; /* Reducción para espacio */
+    font-size: 1em; /* Reducción para espacio */
     font-weight: normal;
     overflow: hidden; /* Elimina scroll */
     flex-grow: 1; /* Ajusta altura automáticamente */
@@ -1561,7 +1570,7 @@ ul + .solucion-promolider {
     color: white;
     top: -0.05em;
     filter: brightness(1.2);
-    font-size: 1.3em; /* Tamaño ajustado */
+    font-size: 1em; /* Tamaño ajustado */
 }
 
 .beneficios-info li span,
@@ -1778,7 +1787,7 @@ ul + .solucion-promolider {
 
 .texto-destacado-distribuidor {
     font-family: 'Poppins', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     display: inline-block;
     margin: 0;
@@ -1793,7 +1802,7 @@ ul + .solucion-promolider {
     left: 1cm;
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 3.3em;
+    font-size: 2.8em;
     font-weight: bold;
     z-index: 4;
     width: 80%;
@@ -1861,7 +1870,7 @@ ul + .solucion-promolider {
 .solucion-promolider-distribuidor p {
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: normal;
     margin: 0; /* Elimina el margen */
     line-height: 1.5;
@@ -1908,7 +1917,7 @@ ul + .solucion-promolider {
 .lo-mejor p {
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: normal;
     margin: 0;
     line-height: 1.5;
@@ -1938,7 +1947,7 @@ ul + .solucion-promolider {
 
 .lista-superior li {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.2;
     color: black;
     position: relative;
@@ -2212,7 +2221,7 @@ body, html {
     width: 35%;
     min-width: 300px;
     color: white;
-    padding: 1rem;
+    padding: 1rem !important;
     border: 3px solid white;
     border-radius: 15px;
     background-color: transparent; /* Cambiado a transparente */
@@ -2223,9 +2232,8 @@ body, html {
     backdrop-filter: blur(1px); 
 }
 
-/* Resto de estilos permanecen igual... */
 .leadboost-content h3 {
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     margin-bottom: 0.5rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
@@ -2234,7 +2242,7 @@ body, html {
 .leadboost-content ul {
     list-style-type: none;
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.9rem !important;
     line-height: 1.4;
     margin: 0;
 }
@@ -2258,7 +2266,7 @@ body, html {
 
 .leadboost-content2 {
     position: absolute;
-    top: 8cm; /* Ajusta esta posición según necesites */
+    top: 6.5cm; /* Ajusta esta posición según necesites */
     right: 2%;
     width: 35%;
     min-width: 300px;
@@ -2274,7 +2282,7 @@ body, html {
 }
 
 .leadboost-content2 h3 {
-    font-size: 1.1rem; /* Tamaño aumentado como en .leadboost-content */
+    font-size: 1rem !important; /* Tamaño aumentado como en .leadboost-content */
     margin-bottom: 0.5rem; /* Reducido */
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
@@ -2283,7 +2291,7 @@ body, html {
 .leadboost-content2 ul {
     list-style-type: none;
     padding: 0;
-    font-size: 1rem; /* Tamaño aumentado */
+    font-size: 0.9rem !important; /* Tamaño aumentado */
     line-height: 1.4;
     margin: 0;
 }
@@ -2300,14 +2308,14 @@ body, html {
     position: absolute;
     left: 0.3rem; /* Ajuste de posición */
     color: #fff;
-    font-size: 0.9rem; /* Reducido */
+    font-size: 0.9rem !important; /* Reducido */
     font-weight: bold;
     top: 0.1rem; /* Alineación vertical */
 }
 
 .leadboost-app {
     position: absolute;
-    top: 15.3cm;
+    top: 14.2cm;
     right: 2%;
     width: 35%;
     min-width: 300px;
@@ -2320,7 +2328,7 @@ body, html {
 
 .leadboost-app .info-abajo {
     color: white !important;
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
     font-weight: bold !important;
     margin: 0 !important;
     text-align: center !important;
@@ -2351,7 +2359,7 @@ body, html {
     color: white;
     font-weight: 600;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1rem !important;
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
@@ -2415,11 +2423,11 @@ body, html {
 .cabecera-leadboost {
     color: #00FF00;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem !important;
 }
 
 .principal-leadboost {
-    font-size: 3rem;
+    font-size: 2.8rem !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2429,7 +2437,7 @@ body, html {
 }
 
 .agrandar-leadboost {
-    font-size: 4.2rem;
+    font-size: 4rem;
 }
 
 .animacion-leadboost {
@@ -2459,7 +2467,7 @@ body, html {
 .descripcion-leadboost-abajo {
     color: #00FF00;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.12rem !important;
 }
 
 /* Estilos responsivos */
@@ -2821,7 +2829,7 @@ body, html {
     font-weight: bold;
     text-align: center !important;
     margin-bottom: 30px;
-    font-size: 3.5rem;
+    font-size: 3rem !important;
     font-family: 'Poppins', sans-serif;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
     display: inline-block; /* necesario para que transform funcione solo en el texto */
@@ -2884,13 +2892,13 @@ body, html {
     margin: 0;
     padding: 10px;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.4rem !important;
 }
 
 .informacion-p {
     color: white;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 5px;
@@ -2902,7 +2910,7 @@ body, html {
 .promolider-textoInfo {
     color: black;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 5px;
@@ -3062,7 +3070,7 @@ body, html {
 }
 
 .titulo-industria {
-    font-size: 3.2rem !important;
+    font-size: 2.8rem !important;
     margin-bottom: 20px;
     font-weight: bold;
     color: #00FF00;
@@ -3114,7 +3122,7 @@ body, html {
 }
 
 .titulo-testimonio {
-    font-size: 3.2rem !important;
+    font-size: 2.8rem !important;
     margin: 0 0 0.3cm 0; 
     color: black;
     font-weight: bold;
@@ -3410,7 +3418,7 @@ body, html {
 
 .titulo-verde {
     color: #00FF00;
-    font-size: 52px;
+    font-size: 43px;
     margin-bottom: 20px;
     line-height: 1.1;
     font-weight: bold;
@@ -3425,7 +3433,7 @@ body, html {
 }
 
 .subtitulo-principal {
-    font-size: 19px;
+    font-size: 17px;
     margin-bottom: 5px;
     font-weight: bold;
     color: black;
@@ -3433,7 +3441,7 @@ body, html {
 }
 
 .descripcion-oportunidad, .descripcion-pionero {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 5px;
     text-align: right !important; 
 }
@@ -3456,7 +3464,7 @@ body, html {
     background-color: #00ff00;
     color: black;
     padding: 10px 50px;
-    font-size: 19px;
+    font-size: 17px;  
     font-weight: bold;
     border: none;
     text-align: center !important;
@@ -3494,7 +3502,7 @@ body, html {
 }
 
 .mensaje-final {
-    font-size: 19px;
+    font-size: 17px;
     text-align: right !important; 
     color: black;
 }
