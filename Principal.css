@@ -1741,6 +1741,34 @@ ul + .solucion-promolider {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1450px) {
+    .imagen-flotante,
+    .beneficios-info {
+        position: relative !important;
+    }
+
+    .imagen-flotante {
+        width: 550px !important;
+        max-height: none !important;
+        float: right !important;
+        margin-left: 20px;
+        clear: right !important;
+        top: -11cm;
+        left: 4cm;
+    }
+
+    .beneficios-info {
+        width: 20cm !important;
+        height: 7.5cm !important;
+        left: 16cm !important;
+    }
+
+    .contenedor-productor {
+        overflow: hidden;
+    }
+}
+
+
 /*** SECCION INFO DE DISTRIBUIDOR ***/
 
 .container-distribuidor {
@@ -1753,7 +1781,7 @@ ul + .solucion-promolider {
 
 .div-distribuidor {
     height: 3cm;
-    background-color: #24292e;
+    background-color: #0e1618;
     border-radius: 0 0 15px 15px;
     position: relative;
     z-index: 2;
@@ -1980,15 +2008,9 @@ ul + .solucion-promolider {
 
 /* ===== MEDIA QUERIES PARA RESPONSIVIDAD MEJORADA ===== */
 
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  @media (max-width: 768px) {
-        .info-distribuidor {
-            height: 17cm; /* Reduce 2cm en móvil */
+  @media (max-width: 1020px) {
+    .info-distribuidor {
+        height: 17cm; /* Reduce 2cm en móvil */
     }
   }
 
@@ -1998,7 +2020,7 @@ body, html {
         }
     }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     .container-distribuidor {
       position: relative;
       height: auto;
@@ -2166,6 +2188,40 @@ body, html {
       font-size: 0.95em;
     }
   }
+
+  @media (min-width: 1020px) and (max-width: 1450px) {
+    .imagen-distribuidor {
+        width: 670px;
+        max-width: none;
+        height: auto;
+        margin: 20px 0 20px auto;
+        object-fit: contain;
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+        z-index: 1;
+        position: relative;
+        left: -1.1cm;
+        right: 0;
+        bottom: 0.4cm;
+        margin-bottom: 0;
+        float: right;
+        transform: translateX(0.5cm); 
+    }
+
+    .lo-mejor {
+        padding-left: 0.5cm !important;
+        margin-top: 7cm !important;
+        left: 18cm;
+    }
+
+    .solucion-promolider-distribuidor {
+        margin-top: -1cm !important;  
+    }
+
+    .lista-superior {
+        margin-top: 12.5cm;
+        left: -1.5cm; 
+    }
+}
 
 /***** APP LEADBOOST *****/
 
