@@ -1750,13 +1750,13 @@ ul + .solucion-promolider {
     .imagen-flotante {
         width: 550px !important;
         max-height: none !important;
-        float: right !important;
-        margin-left: 20px;
-        clear: right !important;
+        margin-left: 20px; 
+        position: fixed;           
         top: -11cm;
-        left: 4cm;
+        left: 24cm;
+              
     }
-
+    
     .beneficios-info {
         width: 20cm !important;
         height: 7.5cm !important;
@@ -2194,23 +2194,22 @@ ul + .solucion-promolider {
         width: 670px;
         max-width: none;
         height: auto;
-        margin: 20px 0 20px auto;
         object-fit: contain;
         filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
         z-index: 1;
         position: relative;
-        left: -1.1cm;
+        margin: 20px 0;
+        left: 17cm;
         right: 0;
         bottom: 0.4cm;
-        margin-bottom: 0;
-        float: right;
-        transform: translateX(0.5cm); 
-    }
+        float: none;
+        transform: none;
+    }    
 
     .lo-mejor {
         padding-left: 0.5cm !important;
         margin-top: 7cm !important;
-        left: 18cm;
+        left: 17cm;
     }
 
     .solucion-promolider-distribuidor {
